@@ -13,10 +13,17 @@ const config: Config = {
         display: ["var(--font-display)", "system-ui", "sans-serif"],
       },
       colors: {
-        cigarette: "#D4A574",
+        cigarette: "#E08E45",
         ashed: "#1C1C1C",
         ink: "#1A1A1A",
         white: "#FFFFFF",
+        poppi: {
+          pink: "#FF6B9D",
+          yellow: "#FFE066",
+          coral: "#FF8C7A",
+          mint: "#7FDBDA",
+          cream: "#FFF5E6",
+        },
       },
     },
   },

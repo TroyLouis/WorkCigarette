@@ -2,21 +2,23 @@ import EmailSignup from "@/components/EmailSignup";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 pt-16">
-      <div className="max-w-2xl mx-auto text-center">
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-ink tracking-tight">
-          Something great is on the way
+    <main>
+      {/* Hero with waitlist */}
+      <section className="min-h-[70vh] flex flex-col items-center justify-center px-6 pt-24 pb-24 bg-poppi-yellow">
+        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-ink tracking-tight text-center max-w-4xl">
+          cola & espresso
         </h1>
-        <p className="mt-6 text-lg text-ink/70 max-w-md mx-auto">
-          We&apos;re building something new. Join the waitlist to be the first to know when we launch.
+        <p className="mt-8 text-xl text-ink/80 max-w-xl mx-auto text-center lowercase">
+          a little boost when you need it most. coming soon.
         </p>
-        <div className="mt-10 flex justify-center">
+        <div className="mt-14 flex flex-col items-center">
           <EmailSignup />
+          <p className="mt-6 text-sm text-ink/60 lowercase">
+            no spam. unsubscribe anytime.
+          </p>
         </div>
-        <p className="mt-8 text-sm text-ink/50">
-          No spam. Unsubscribe anytime.
-        </p>
-      </div>
+      </section>
+
     </main>
   );
 }

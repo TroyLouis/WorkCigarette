@@ -28,52 +28,49 @@ function TikTokIcon({ className }: { className?: string }) {
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-ashed/20 bg-cigarette">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Left nav */}
-        <nav className="flex items-center gap-8">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-black/5">
+      <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link
-            href="/shop"
-            className="text-sm font-medium text-ashed hover:text-ashed/80 transition-colors uppercase tracking-wide"
+            href="/"
+            className="font-display text-2xl font-bold text-ink tracking-tight order-1 sm:order-none"
           >
-            Shop
+            WorkCigarette
           </Link>
-          <Link
-            href="/our-story"
-            className="text-sm font-medium text-ashed hover:text-ashed/80 transition-colors uppercase tracking-wide"
-          >
-            Our Story
-          </Link>
-        </nav>
-
-        {/* Center logo */}
-        <Link
-          href="/"
-          className="absolute left-1/2 -translate-x-1/2 font-display text-xl font-semibold text-ashed tracking-tight"
-        >
-          WorkCigarette
-        </Link>
-
-        {/* Right social icons */}
-        <div className="flex items-center gap-6">
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-ashed hover:text-ashed/80 transition-colors"
-            aria-label="Instagram"
-          >
-            <InstagramIcon className="w-5 h-5" />
-          </a>
-          <a
-            href="https://tiktok.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-ashed hover:text-ashed/80 transition-colors"
-            aria-label="TikTok"
-          >
-            <TikTokIcon className="w-5 h-5" />
-          </a>
+          <nav className="flex items-center gap-8 order-2 sm:order-none">
+            <Link
+              href="/shop"
+              className="text-sm font-medium text-ink hover:text-cigarette transition-colors lowercase"
+            >
+              shop
+            </Link>
+            <Link
+              href="/our-story"
+              className="text-sm font-medium text-ink hover:text-cigarette transition-colors lowercase"
+            >
+              our story
+            </Link>
+          </nav>
+          <div className="flex items-center gap-5 order-3 sm:order-none">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink hover:text-cigarette transition-colors"
+              aria-label="Instagram"
+            >
+              <InstagramIcon className="w-5 h-5" />
+            </a>
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink hover:text-cigarette transition-colors"
+              aria-label="TikTok"
+            >
+              <TikTokIcon className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </div>
     </header>

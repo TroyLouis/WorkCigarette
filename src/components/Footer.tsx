@@ -28,51 +28,30 @@ function TikTokIcon({ className }: { className?: string }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-ashed text-white/90">
-      <div className="max-w-7xl mx-auto px-6 py-12">
+    <footer className="bg-ashed text-white">
+      <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <Link
-            href="/"
-            className="font-display text-lg font-semibold text-white"
-          >
+          <Link href="/" className="font-display text-lg font-bold text-white">
             WorkCigarette
           </Link>
-          <nav className="flex items-center gap-8">
-            <Link
-              href="/shop"
-              className="text-sm hover:text-white transition-colors"
-            >
-              Shop
+          <nav className="flex items-center gap-6">
+            <Link href="/shop" className="text-sm text-white/80 hover:text-white transition-colors lowercase">
+              shop
             </Link>
-            <Link
-              href="/our-story"
-              className="text-sm hover:text-white transition-colors"
-            >
-              Our Story
+            <Link href="/our-story" className="text-sm text-white/80 hover:text-white transition-colors lowercase">
+              our story
             </Link>
           </nav>
-          <div className="flex items-center gap-6">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
-              aria-label="Instagram"
-            >
+          <div className="flex items-center gap-4">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors" aria-label="Instagram">
               <InstagramIcon className="w-5 h-5" />
             </a>
-            <a
-              href="https://tiktok.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
-              aria-label="TikTok"
-            >
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors" aria-label="TikTok">
               <TikTokIcon className="w-5 h-5" />
             </a>
           </div>
         </div>
-        <p className="mt-8 text-center text-sm text-white/60">
+        <p className="mt-6 pt-6 border-t border-white/20 text-center text-white/60 text-sm">
           © {new Date().getFullYear()} WorkCigarette
         </p>
       </div>
