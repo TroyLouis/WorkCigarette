@@ -10,13 +10,13 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
-        display: ["var(--font-outfit)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "system-ui", "sans-serif"],
       },
       colors: {
-        cream: "#F5F0E8",
+        cigarette: "#D4A574",
+        ashed: "#1C1C1C",
         ink: "#1A1A1A",
-        warm: "#8B7355",
-        accent: "#C4A77D",
+        white: "#FFFFFF",
       },
     },
   },

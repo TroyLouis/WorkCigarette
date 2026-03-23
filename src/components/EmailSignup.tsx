@@ -47,12 +47,12 @@ export default function EmailSignup() {
           placeholder="Enter your email"
           required
           disabled={status === "loading"}
-          className="flex-1 px-4 py-3 rounded-lg border-2 border-ink/20 bg-white/80 focus:border-warm focus:outline-none focus:ring-2 focus:ring-warm/20 transition-all disabled:opacity-60 placeholder:text-ink/50"
+          className="flex-1 px-4 py-3 rounded-lg border-2 border-ink/20 bg-white focus:border-cigarette focus:outline-none focus:ring-2 focus:ring-cigarette/20 transition-all disabled:opacity-60 placeholder:text-ink/50"
         />
         <button
           type="submit"
           disabled={status === "loading"}
-          className="px-6 py-3 rounded-lg bg-ink text-cream font-medium hover:bg-warm transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+          className="px-6 py-3 rounded-lg bg-ashed text-white font-medium hover:bg-cigarette transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
           {status === "loading" ? "Joining…" : "Join waitlist"}
         </button>
@@ -60,7 +60,7 @@ export default function EmailSignup() {
       {message && (
         <p
           className={`mt-3 text-sm ${
-            status === "success" ? "text-warm" : status === "error" ? "text-red-600" : ""
+            status === "success" ? "text-cigarette" : status === "error" ? "text-red-600" : ""
           }`}
         >
           {message}
