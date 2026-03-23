@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Rubik_Burned, DM_Sans } from "next/font/google";
+import { Outfit, DM_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const rubikBurned = Rubik_Burned({
+const outfit = Outfit({
   subsets: ["latin"],
-  weight: "400",
   variable: "--font-display",
 });
 
@@ -26,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${rubikBurned.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${dmSans.variable}`}>
       <body className="antialiased min-h-screen font-sans flex flex-col">
         <Header />
         <div className="flex-1">{children}</div>
